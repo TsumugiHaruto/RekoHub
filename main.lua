@@ -53,6 +53,8 @@ do
                     Theme = "Aqua",
                     Duration = 5
                 })
+        end
+    })
 end
 SaveManager:SetLibrary(Fluent)
 InterfaceManager:SetLibrary(Fluent)
