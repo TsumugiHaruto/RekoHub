@@ -51,7 +51,7 @@ do
                     Title = "Reko Hub",
                     Content = "ESP enabled",
                     Theme = "Aqua",
-                    Duratenabled
+                    Duration = 5
                 })
 end
 SaveManager:SetLibrary(Fluent)
