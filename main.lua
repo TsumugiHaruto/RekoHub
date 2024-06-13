@@ -41,6 +41,18 @@ do
                 })
         end
     })
+
+    Tabs.Universal:AddButton({
+        Title = "ESP",
+        Description = "Fully show player",
+        Callback = function()
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/TsumugiHaruto/nothing/main/esp.lua"))()
+                Fluent:Notify({
+                    Title = "Reko Hub",
+                    Content = "ESP enabled",
+                    Theme = "Aqua",
+                    Duratenabled
+                })
 end
 SaveManager:SetLibrary(Fluent)
 InterfaceManager:SetLibrary(Fluent)
