@@ -4,7 +4,7 @@ local InterfaceManager = loadstring(game:HttpGet("https://raw.githubusercontent.
 
 local Window = Fluent:CreateWindow({
     Title = "Reko Hub 1.0",
-    SubTitle = "by Harutlua
+    SubTitle = "by Haruto",
     TabWidth = 260,
     Size = UDim2.fromOffset(680,380),
     Acrylic = true,
