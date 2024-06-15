@@ -15,6 +15,7 @@ local Window = Fluent:CreateWindow({
 local Tabs = {
     Main = Window:AddTab({ Title = "Main", Icon = "home" }),
     Settings = Window:AddTab({ Title = "Settings", Icon = "settings" }),
+    BladeBall = Window:AddTab({ Title = "BladeBall", Icon = "file-terminal" }),
     Universal = Window:AddTab({ Title = "Universal Feature", Icon = "globe" })
 }
 
@@ -27,6 +28,20 @@ do
         Content = "Please wait for update feature"
     })
 
+    -- BladeBall
+    Tabs.BladeBall:AddButton({
+        Title = "BladeBall",
+        Description = "Good parry with visual",
+        Callback = function()
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/TsumugiHaruto/nothing/main/parry.lua"))()
+                Fluent:Notify({
+                    Title = "Reko Hub",
+                    Content = "Parry enabled",
+                    Theme = "Aqua",
+                    Duration = 5
+                })
+        end
+    })
     -- Universal
     Tabs.Universal:AddButton({
         Title = "Anti AFK",
@@ -36,20 +51,6 @@ do
                 Fluent:Notify({
                     Title = "Reko Hub",
                     Content = "Anti AFK enabled",
-                    Theme = "Aqua",
-                    Duration = 5
-                })
-        end
-    })
-
-    Tabs.Universal:AddButton({
-        Title = "ESP",
-        Description = "Fully show player",
-        Callback = function()
-            loadstring(game:HttpGet("https://raw.githubusercontent.com/TsumugiHaruto/nothing/main/esp.lua"))()
-                Fluent:Notify({
-                    Title = "Reko Hub",
-                    Content = "ESP enabled",
                     Theme = "Aqua",
                     Duration = 5
                 })
